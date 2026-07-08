@@ -1,0 +1,37 @@
+# Playwright MCP runtime dirs (one per server mode).
+# Each mode's output/ is gitignored; the persistent mode's profile/ too.
+# config.json, README.md, and a .gitkeep inside each dir stay tracked so the
+# folder structure is visible on a fresh clone.
+playwright/headless/output/*
+!playwright/headless/output/.gitkeep
+playwright/interactive/output/*
+!playwright/interactive/output/.gitkeep
+playwright/tracing/output/*
+!playwright/tracing/output/.gitkeep
+playwright/persistent/output/*
+!playwright/persistent/output/.gitkeep
+playwright/persistent/profile/*
+!playwright/persistent/profile/.gitkeep
+
+# Ephemeral modes use isolated (in-memory) profiles and should never write to
+# their profile/ dir — but ignore any contents defensively so that if isolation
+# ever regresses, captured cookies/credentials can't be committed. The
+# placeholder README.md in each stays tracked.
+playwright/headless/profile/*
+!playwright/headless/profile/README.md
+playwright/interactive/profile/*
+!playwright/interactive/profile/README.md
+playwright/tracing/profile/*
+!playwright/tracing/profile/README.md
+
+# Launcher runtime state (lockfiles, log) - per-mode subdir created on demand.
+playwright/headless/state/
+playwright/interactive/state/
+playwright/tracing/state/
+playwright/persistent/state/
+
+# Agent scratch space — gitignored entirely, created on demand
+.work/
+
+# Claude Code local overrides — user-specific, never committed
+.claude/settings.local.json

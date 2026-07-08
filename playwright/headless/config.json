@@ -1,0 +1,22 @@
+{
+  "browser": {
+    "browserName": "chromium",
+    "isolated": true,
+    "launchOptions": {
+      "headless": true
+    },
+    "contextOptions": {
+      "viewport": { "width": 1920, "height": 1080 },
+      "locale": "nl-NL",
+      "timezoneId": "Europe/Amsterdam",
+      "ignoreHTTPSErrors": true,
+      "permissions": ["clipboard-read", "clipboard-write"]
+    }
+  },
+  "capabilities": ["vision", "devtools"],
+  "outputDir": "playwright/headless/output",
+  "saveSession": true,
+  "console": { "level": "warning" },
+  "codegen": "none",
+  "allowUnrestrictedFileAccess": true
+}

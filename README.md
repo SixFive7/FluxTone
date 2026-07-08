@@ -23,6 +23,13 @@ own file, so older ones stay playable:
 See [CHANGELOG.md](CHANGELOG.md) for what changed between versions. This project follows
 [Semantic Versioning](https://semver.org).
 
+## Development
+
+There is nothing to build — edit the HTML directly. Browser-based testing and
+verification run through a set of Playwright MCP servers (headless / interactive /
+tracing / persistent) driven by a single parametric launcher; see
+[playwright/README.md](playwright/README.md) and [CLAUDE.md](CLAUDE.md).
+
 ## License
 
 [MIT](LICENSE) © Jori Huisman

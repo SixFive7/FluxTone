@@ -1,0 +1,28 @@
+{
+  "browser": {
+    "browserName": "chromium",
+    "isolated": true,
+    "launchOptions": {
+      "headless": false,
+      "channel": "chrome"
+    },
+    "contextOptions": {
+      "viewport": { "width": 1920, "height": 1080 },
+      "locale": "nl-NL",
+      "timezoneId": "Europe/Amsterdam",
+      "ignoreHTTPSErrors": true,
+      "permissions": ["clipboard-read", "clipboard-write"],
+      "recordHar": {
+        "path": "playwright/tracing/output/network.har",
+        "mode": "full",
+        "content": "embed"
+      }
+    }
+  },
+  "capabilities": ["vision", "devtools"],
+  "outputDir": "playwright/tracing/output",
+  "saveSession": true,
+  "console": { "level": "info" },
+  "codegen": "none",
+  "allowUnrestrictedFileAccess": true
+}

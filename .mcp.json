@@ -1,0 +1,44 @@
+{
+  "mcpServers": {
+    "playwright-headless": {
+      "type": "stdio",
+      "command": "powershell.exe",
+      "args": [
+        "-ExecutionPolicy", "Bypass",
+        "-NoProfile",
+        "-File", "playwright/launch.ps1",
+        "-Mode", "headless"
+      ]
+    },
+    "playwright-interactive": {
+      "type": "stdio",
+      "command": "powershell.exe",
+      "args": [
+        "-ExecutionPolicy", "Bypass",
+        "-NoProfile",
+        "-File", "playwright/launch.ps1",
+        "-Mode", "interactive"
+      ]
+    },
+    "playwright-tracing": {
+      "type": "stdio",
+      "command": "powershell.exe",
+      "args": [
+        "-ExecutionPolicy", "Bypass",
+        "-NoProfile",
+        "-File", "playwright/launch.ps1",
+        "-Mode", "tracing"
+      ]
+    },
+    "playwright-persistent": {
+      "type": "stdio",
+      "command": "powershell.exe",
+      "args": [
+        "-ExecutionPolicy", "Bypass",
+        "-NoProfile",
+        "-File", "playwright/launch.ps1",
+        "-Mode", "persistent"
+      ]
+    }
+  }
+}

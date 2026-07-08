@@ -1,2 +1,12 @@
 # Keep the app version files byte-identical across platforms.
 *.html text eol=lf
+
+# Pin LF for the Playwright setup so these files stay byte-identical across the
+# repos that share it, independent of each repo's core.autocrlf setting.
+playwright/**                   text eol=lf
+.claude/hooks/playwright-*.ps1  text eol=lf
+.mcp.json                       text eol=lf
+.claude/settings.json           text eol=lf
+CLAUDE.md                       text eol=lf
+.gitignore                      text eol=lf
+.gitattributes                  text eol=lf

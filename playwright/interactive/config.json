@@ -1,0 +1,23 @@
+{
+  "browser": {
+    "browserName": "chromium",
+    "isolated": true,
+    "launchOptions": {
+      "headless": false,
+      "channel": "chrome"
+    },
+    "contextOptions": {
+      "viewport": { "width": 1920, "height": 1080 },
+      "locale": "nl-NL",
+      "timezoneId": "Europe/Amsterdam",
+      "ignoreHTTPSErrors": true,
+      "permissions": ["clipboard-read", "clipboard-write"]
+    }
+  },
+  "capabilities": ["vision", "devtools"],
+  "outputDir": "playwright/interactive/output",
+  "saveSession": true,
+  "console": { "level": "warning" },
+  "codegen": "none",
+  "allowUnrestrictedFileAccess": true
+}
