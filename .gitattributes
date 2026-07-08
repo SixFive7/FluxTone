@@ -1,0 +1,2 @@
+# Keep the app version files byte-identical across platforms.
+*.html text eol=lf
