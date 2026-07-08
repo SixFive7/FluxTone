@@ -23,6 +23,7 @@ own file, so older ones stay playable:
 | ---- | ------- |
 | `v1.html` | the original synth |
 | `v2.html` | adds recording — capture, replay, and download your takes |
+| `v2.1.html` | downloads as MP3; asks for storage only when you first record |
 
 See [CHANGELOG.md](CHANGELOG.md) for what changed between versions. This project follows
 [Semantic Versioning](https://semver.org).
