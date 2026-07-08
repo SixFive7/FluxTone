@@ -5,6 +5,15 @@ All notable changes to FLUX·TONE are documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] - 2026-07-08
+
+Made for my wife. 💛
+
+### Added
+- **Record, replay, and download** your performance. Everything is captured in the
+  browser and stored locally in IndexedDB — no server, and still a single static file.
+- A recordings library with per-take play/pause, rename, download, and delete.
+
 ## [1.0.0] - 2026-07-08
 
 Made for my daughter. 💛

@@ -6,6 +6,9 @@ Drag anywhere on the screen to play. Move **left / right** to sweep pitch, **up 
 to shape the timbre, and use **several fingers** for chords — every gesture drives a
 fluid, audio-reactive visualizer built on the Web Audio API and a canvas particle field.
 
+You can also **record** your performance, play it back, and **download** it — captured
+and stored entirely in your browser, with no server involved.
+
 There is no build step and no framework. The entire instrument is one self-contained
 `.html` file you can open locally or host as static content anywhere.
 
@@ -19,6 +22,7 @@ own file, so older ones stay playable:
 | File | Version |
 | ---- | ------- |
 | `v1.html` | the original synth |
+| `v2.html` | adds recording — capture, replay, and download your takes |
 
 See [CHANGELOG.md](CHANGELOG.md) for what changed between versions. This project follows
 [Semantic Versioning](https://semver.org).
