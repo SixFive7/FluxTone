@@ -16,8 +16,8 @@ There is no build step and no framework. The entire instrument is one self-conta
 
 Open `index.html` in a modern browser, or drop the folder behind any static web server.
 
-`index.html` always redirects to the latest release. Every version is also kept as its
-own file, so older ones stay playable:
+`index.html` always serves a copy of the latest release. Every version is also kept as
+its own file, so older ones stay playable:
 
 | File | Version |
 | ---- | ------- |

@@ -2,11 +2,11 @@
 
 FLUX·TONE is a single-file, static, browser-based generative synthesizer. The whole app
 is one self-contained HTML file per version (`v1.html`, `v2.html`, …), and `index.html`
-redirects to the latest. There is no build system, package manager, or server — edits are
+is a copy of the latest. There is no build system, package manager, or server — edits are
 made directly in the HTML, and it is hosted as static content.
 
-When adding a new version, keep every previous `vN.html` in place, repoint `index.html`
-at the newest one, and add a matching entry to `CHANGELOG.md`.
+When adding a new version, keep every previous `vN.html` in place, copy the newest one
+over `index.html`, and add a matching entry to `CHANGELOG.md`.
 
 ## Playwright usage policy
 
