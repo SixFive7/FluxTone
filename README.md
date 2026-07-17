@@ -1,5 +1,12 @@
 # FLUX·TONE
 
+[![Latest release](https://img.shields.io/github/v/release/SixFive7/FluxTone?sort=semver&label=release&color=4d9fff)](https://github.com/SixFive7/FluxTone/releases)
+[![License: MIT](https://img.shields.io/github/license/SixFive7/FluxTone?color=9a5bff)](LICENSE)
+[![Live demo](https://img.shields.io/badge/demo-fluxtone.huisman.io-ff4fa8)](https://fluxtone.huisman.io)
+![Single file, no build](https://img.shields.io/badge/single%20file-no%20build-6b7280)
+
+![FLUX·TONE — three voices playing across the pitch spectrum](assets/hero.png)
+
 A touch-and-drag generative synthesizer that lives in a single HTML file.
 
 Drag anywhere on the screen to play. Move **left / right** to sweep pitch, **up / down**
@@ -15,6 +22,8 @@ There is no build step and no framework. The entire instrument is one self-conta
 ## Play it
 
 Open `index.html` in a modern browser, or drop the folder behind any static web server.
+Try it live at **[fluxtone.huisman.io](https://fluxtone.huisman.io)** (also mirrored on
+[GitHub Pages](https://sixfive7.github.io/FluxTone/)).
 
 `index.html` always serves a copy of the latest release. Every version is also kept as
 its own file, so older ones stay playable:
