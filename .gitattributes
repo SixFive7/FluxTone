@@ -1,12 +1,75 @@
-# Keep the app version files byte-identical across platforms.
-*.html text eol=lf
+###############################################################################
+# Line-ending & attribute policy. The baseline below MUST stay the first rule.
+# LF in history and working tree, every OS. text=auto auto-exempts binaries.
+###############################################################################
+* text=auto eol=lf
 
-# Pin LF for the Playwright setup so these files stay byte-identical across the
-# repos that share it, independent of each repo's core.autocrlf setting.
-playwright/**                   text eol=lf
-.claude/hooks/playwright-*.ps1  text eol=lf
-.mcp.json                       text eol=lf
-.claude/settings.json           text eol=lf
-CLAUDE.md                       text eol=lf
-.gitignore                      text eol=lf
-.gitattributes                  text eol=lf
+# Windows batch files — keep CRLF (cheap insurance for older cmd.exe hosts).
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Explicit text intent for project-specific / stock-template-missed extensions.
+*.cs       text diff=csharp
+*.vb       text
+*.myapp    text
+*.settings text
+*.resx     text
+*.ic10     text
+*.svelte   text
+
+# Binary — never normalize, never diff.
+*.png    binary
+*.jpg    binary
+*.jpeg   binary
+*.gif    binary
+*.bmp    binary
+*.ico    binary
+*.cur    binary
+*.psd    binary
+*.ai     binary
+*.webp   binary
+*.tiff   binary
+*.dll    binary
+*.exe    binary
+*.pdb    binary
+*.lib    binary
+*.obj    binary
+*.sys    binary
+*.res    binary
+*.so     binary
+*.jar    binary
+*.msi    binary
+*.nupkg  binary
+*.pfx    binary
+*.p12    binary
+*.snk    binary
+*.cer    binary
+*.crt    binary
+*.key    binary
+*.jks    binary
+*.zip    binary
+*.7z     binary
+*.gz     binary
+*.tar    binary
+*.iso    binary
+*.bin    binary
+*.pak    binary
+*.asar   binary
+*.db     binary
+*.sqlite binary
+*.suo    binary
+*.gguf   binary
+*.traineddata binary
+*.bcmap  binary
+*.woff   binary
+*.woff2  binary
+*.ttf    binary
+*.otf    binary
+*.eot    binary
+*.wav    binary
+*.mp3    binary
+*.mp4    binary
+*.pdf    binary
+*.doc    binary
+*.docx   binary
+*.xlsx   binary
