@@ -59,6 +59,7 @@ Motivation only lives in the markdown - it cannot recover itself.
 Rules and reference data live exclusively in playwright/README.md. Read it before making config changes
 if you have not yet this conversation. Per-mode specifics live in playwright/{mode}/README.md.
 Launcher specifics live in playwright/LAUNCHER.md.
+The usage policy lives in this repo's AGENTS.md.
 
 This hook is defined in .claude/settings.json and runs .claude/hooks/playwright-config-hook.ps1.
 To change the hook behaviour or matcher list, edit those files.

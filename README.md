@@ -69,7 +69,7 @@ that is the entire deployment story.
 There is nothing to build; edit the HTML directly. Browser-based testing and verification
 run through four Playwright MCP servers (headless / interactive / tracing / persistent)
 driven by a single parametric launcher — see [playwright/README.md](playwright/README.md)
-and [CLAUDE.md](CLAUDE.md).
+and [AGENTS.md](AGENTS.md).
 
 ## License
 

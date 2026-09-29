@@ -8,6 +8,10 @@ made directly in the HTML, and it is hosted as static content.
 When adding a new version, keep every previous `vN.html` in place, copy the newest one
 over `index.html`, and add a matching entry to `CHANGELOG.md`.
 
+## Subfolder instructions
+
+Before working in a subfolder, read any AGENTS.md from that folder up to the repo root that you haven't seen yet. Claude Code attaches them only when a file there is read: https://github.com/anthropics/claude-code/tree/main/mods/agents-md#where-it-still-differs-from-claudemd
+
 ## Playwright usage policy
 
 Four Playwright MCP servers are configured: `playwright-headless`, `playwright-interactive`, `playwright-tracing`, `playwright-persistent`. Apply this policy when choosing one:

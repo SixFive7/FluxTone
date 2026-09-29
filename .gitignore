@@ -35,3 +35,7 @@ playwright/persistent/state/
 
 # Claude Code local overrides — user-specific, never committed
 .claude/settings.local.json
+
+# Instructions live in AGENTS.md; a CLAUDE.md makes Claude Code skip it
+CLAUDE.md
+CLAUDE.local.md

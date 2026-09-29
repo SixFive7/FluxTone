@@ -26,6 +26,8 @@ This project runs **four** `@playwright/mcp` instances as separate MCP servers, 
 
 If you're unsure: use **headless**. Switch only when the mode's specific feature is required.
 
+The usage policy lives in this repo's [AGENTS.md](../AGENTS.md).
+
 ## Rules
 
 **Drift rule.** When you change a value in any `<mode>/config.json` or in `.mcp.json`, update the matching row in the [Settings](#settings) table below in the **same commit**. Motivation only lives in this README, so it must not drift.
